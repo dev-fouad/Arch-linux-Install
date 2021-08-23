@@ -8,5 +8,3 @@ sudo systemctl enable libvirtd.service
 sudo usermod -aG libvirt fouad
 
 systemctl enable lightdm
-
-chsh -s $(which zsh)
