@@ -17,7 +17,7 @@ echo "127.0.1.1 	arch-fouad.localdomain		arch-fouad" >> /etc/hosts
 
 pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant xf86-video-intel xorg xorg-xwininfo xorg-xinit xorg-xprop xorg-xdpyinfo xorg-xbacklight pulseaudio-bluetooth pulseaudio-alsa pulsemixer pamixer
 
-pacman -S --noconfirm pacman-contrib dialog mtools dosfstools base-devel linux-headers xdg-user-dirs xdg-utils gvfs bluez bluez-utils cups bash-completion openssh git polkit polkit-gnome gnome-keyring 
+pacman -S --noconfirm pacman-contrib dialog mtools dosfstools base-devel linux-headers xdg-user-dirs xdg-utils gvfs bluez bluez-utils cups bash-completion openssh git
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
