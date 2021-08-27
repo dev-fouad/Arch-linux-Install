@@ -7,4 +7,4 @@ pacman -S virt-manager virt-viewer qemu edk2-ovmf bridge-utils dnsmasq vde2 open
 sudo systemctl enable libvirtd.service
 sudo usermod -aG libvirt fouad
 
-systemctl enable lightdm
+#systemctl enable lightdm
