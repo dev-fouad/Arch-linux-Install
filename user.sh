@@ -7,4 +7,6 @@ pacman -S --noconfirm virt-manager virt-viewer qemu edk2-ovmf bridge-utils dnsma
 sudo systemctl enable libvirtd.service
 sudo usermod -aG libvirt fouad
 
+chsh -s $(which zsh)
+
 #systemctl enable lightdm
