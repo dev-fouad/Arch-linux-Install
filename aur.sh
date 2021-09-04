@@ -1,3 +1,3 @@
 #!/bin/bash
 
-paru -S --noconfirm libxft-bgra adwaita-qt brave-bin visual-studio-code-bin
+paru -S libxft-bgra adwaita-qt brave-bin visual-studio-code-bin ttf-ms-fonts
