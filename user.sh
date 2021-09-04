@@ -5,8 +5,8 @@ pacman -S --noconfirm zsh zsh-completions zsh-syntax-highlighting polkit polkit-
 #pacman -S --noconfirm virt-manager virt-viewer qemu edk2-ovmf bridge-utils dnsmasq vde2 openbsd-netcat iptables-nft
 
 #sudo systemctl enable libvirtd.service
-#sudo usermod -aG libvirt fouad
+#sudo usermod -a -G libvirt fouad
 
-chsh -s $(which zsh)
+#chsh -s $(which zsh)
 
 #systemctl enable lightdm
