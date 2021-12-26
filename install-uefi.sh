@@ -27,9 +27,9 @@ systemctl enable sshd
 systemctl enable avahi-daemon.service
 systemctl enable tlp # You can comment this command out if you didn't install tlp, see above
 systemctl enable acpid
-#systemctl enable reflector.timer
-#systemctl enable fstrim.timer
+systemctl enable fstrim.timer
 #systemctl enable firewalld
+#systemctl enable reflector.timer
 
 useradd -mG fouad
 #echo fouad:password | chpasswd
