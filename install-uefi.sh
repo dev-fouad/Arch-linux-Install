@@ -15,7 +15,7 @@ echo "127.0.1.1 	arch-fouad.localdomain		arch-fouad" >> /etc/hosts
 # You can add xorg to the installation packages, I usually add it at the DE or WM install script
 # You can remove the tlp package if you are installing on a desktop or vm
 
-pacman -S --noconfirm grub efibootmgr networkmanager network-manager-applet wireless_tools wpa_supplicant xf86-video-intel xorg xorg-xwininfo xorg-xinit xorg-xprop xorg-xdpyinfo xorg-xbacklight pulseaudio-bluetooth pulseaudio-alsa pulsemixer pamixer volumeicon playerctl pulseaudio-alsa pulseaudio alsa-firmware alsa-lib alsa-plugins alsa-utils gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  pacman-contrib dialog mtools dosfstools base-devel linux-headers xdg-user-dirs xdg-utils gvfs bluez bluez-utils cups bash-completion openssh tlp git
+pacman -S --noconfirm grub efibootmgr acpi acpi_call acpid networkmanager network-manager-applet wireless_tools wpa_supplicant xf86-video-intel xorg xorg-xwininfo xorg-xinit xorg-xprop xorg-xdpyinfo xorg-xbacklight pulseaudio-bluetooth pulseaudio-alsa pulsemixer pamixer volumeicon playerctl pulseaudio-alsa pulseaudio alsa-firmware alsa-lib alsa-plugins alsa-utils gst-plugins-good gst-plugins-bad gst-plugins-base gst-plugins-ugly  pacman-contrib dialog mtools dosfstools base-devel linux-headers xdg-user-dirs xdg-utils gvfs bluez bluez-utils cups bash-completion openssh tlp git
 
 grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
 grub-mkconfig -o /boot/grub/grub.cfg
